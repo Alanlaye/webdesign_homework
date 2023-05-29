@@ -1,0 +1,88 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../image/abou1.jpg");
+    background-image: linear-gradient(to bottom, rgba(255,255,0,0.3), rgba(0,0,255,0.3)), url('../image/abou1.png');
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(91, 105, 136, 0.8);
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(194, 213, 241);
+}
+
+
+.mid{
+    height: 100vh;
+    width: 100vw;
+}
+
+.banner{
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 1150px;
+    height: 421px;
+    animation: imgload1 1s linear;
+}
+
+.banner li{
+    float: left;
+    position: absolute;
+    left: 0px;
+    transition-duration: 0.4s;
+    overflow: hidden;
+}
+
+.banner img{
+    transition: all .5s;
+    filter: grayscale(0.5);
+}
+
+.banner img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+
+.banner div{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(123, 168, 175);
+    float: left;
+    bottom: -100px;
+}
+
+@keyframes imgload1{
+    0%{
+        opacity: 0;
+        margin-top: 300px;
+    }100%{
+        opacity: 1;
+        margin-top: 170px;
+    }
+}
+
+nav .navtitle a {
+    display: inline;
+  }
+  

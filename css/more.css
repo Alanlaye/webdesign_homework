@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+body {
+    background-image: url("../image/abou1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 0, 0.3), rgba(0, 0, 255, 0.3)), url('../image/abou1.jpg');
+
+}
+.mid{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.content{
+    padding-top: 50px;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.con{
+    display: flex;
+    width: 650px;
+    height: 200px;
+    background: rgba(208, 220, 230,0.2);
+    backdrop-filter: blur(0.2);
+    float: left;
+    clear: left;
+    margin-top: 30px;
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(103, 122, 138, 0.8);
+}
+.c1{
+    animation: c1load 0.5s linear;
+}
+.c2{
+    animation: c2load 1s linear;
+}
+.c3{
+    animation: c3load 1.5s linear;
+}
+
+.c1 .img{
+    background-image: url("../image/more1.jpg");
+}
+.c1 .img:hover{
+    background-image: url("../image/more5.jpg");
+}
+.c2 .img{
+    background-image: url("../image/more4.jpg");
+}
+.c2 .img:hover{
+    background-image: url("../image/more1.jpg");
+}
+.c3 .img{
+    background-image: url("../image/more5.jpg");
+}
+.c3 .img:hover{
+    background-image: url("../image/more4.jpg");
+}
+.imghid{
+    overflow: hidden;
+    width: 250px;
+}
+.con .img{
+    width: 250px;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    opacity: 0.8;
+    transition: 0.5s ease 0s;
+}
+.con .img:hover{
+    transform: scale(1.1);
+}
+.con .txt{
+    width: 400px;
+    padding: 0 40px;
+    color: rgb(25, 39, 49);
+    font-family: "幼圆";
+}
+.con .txt h2{
+    color: rgb(53, 75, 104);
+}
+
+
+
+
+h2 a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+h2 a:hover, a:active {
+    opacity: 0.5;
+  }
+
+
+
+
+
+
+
+
+nav .navtitle a {
+    display: inline;
+  }

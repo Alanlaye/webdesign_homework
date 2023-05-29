@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* 主页index的样式化 */
+
+/* 背景图 */
+body {
+    background-image: url("../image/index.gif");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+/* Listen Now */
+/* 样式 */
+.titleimg {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+  }
+  
+  .title {
+    font-size: 3rem; 
+    color: white; 
+    border: 5px solid white; 
+    padding: 20px; 
+  }
+/* 悬停 */
+.title a:link{
+    text-decoration: none;
+    color: white;
+}
+
+.title a:visited{
+    text-decoration: none;
+    color: white;
+}
+.title a:hover{
+    color:rgba(49, 70, 87,0.9);
+    border: rgba(49, 70, 87,0.9);
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+nav .navtitle a {
+  display: inline;
+}
+
+
+
+
+
+
